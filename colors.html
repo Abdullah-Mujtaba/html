@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+
+    <link rel="stylesheet" href="style.css">
+    <!--this is how we link a css file with a html page
+    rel wants to know what we are linking for css we write stylesheet
+    then href wants to know the file name that we are linking-->
+
+
+    <!--another way of adding style is this-->
+
+    <!--the positioning of the style or linking of css file is important-->
+    <style >
+        body
+        {
+            color: white
+        }
+    </style> <!--this is how we can add styling within html-->
+    
+</head>
+<body>
+    <h1>Formatting</h1>
+    <p>This is <b>important</b></p> <!--<b> makes a text bold-->
+    <!--we should use css to make stuff bold but when we want to show that this is 
+    important information we should do this -->
+    <p>This is me using <strong>strong</strong></p>
+    <p>This is me using <em>strong</em></p>
+    <!--the i tag makes the word in italic, em does the same thing and we prefer to use that
+    -->
+    
+    <!--to make a bullet list-->
+    <ul>
+        <li>hello</li>
+        <li>world</li>
+    </ul>
+
+    <!--another way of doing the same thing, ul>li*4 makes a list of 4-->
+    <ul>
+        <li>b,strong</li>
+        <li>i, em</li>
+        <li>sub, sup</li>
+        <li>small</li>
+        <li>del,mark</li>
+    </ul>
+
+    <p>H<sub>2</sub>O</p> <!--<sub> puts something in the subscript of the preceeding 
+        letter-->
+    
+    <p>2 <sup>2</sup> = 4</p> <!--sup puts something in the power-->
+
+    <p> <del>hello</del> </p> <!--<del> adds a line over the text-->
+
+    <p>my name is <mark>max</mark></p> <!--<mark> highlights the text-->
+
+
+    <!--the styling is done through css but if we need inline styling we use the 
+    styling attribute-->
+
+    <!--the last part tells how opaque we want the color to be-->
+    <h3 style="text-align: center; background-color:rgba(0, 128, 0,0.5); color: blue">This heading needs some styling</h3>
+    <!--text align as we know aligns the text and background color
+    sets the background color of the whole line to the said color-->
+    
+    <!--global attributes are those that can be added with any tag-->
+
+    <!--inline styling is useful when we want to do conditional rendering
+    eg if a user is not logged in then a different color-->
+
+
+
+    <p>
+        <!--this is treated differently by the web
+        the additional attribute max says that this is cited from max
+        shows a url or name that where was this cited frm
+        not visible unless visibly untill styled by css-->
+        <blockquote cite="Max">this is a quote</blockquote>
+    </p>
+
+    <!--this is another way of adding quotes usually not used-->
+    <q>This is how we can add quotes to our quotation by using</q>
+
+    <br/>
+    <br/>
+    <abbr title ="Hyper text markup language">HTML</abbr>
+    <!--this shows a text when we hover over the actual text that what is the fullform
+    of it we have to define the full forms by ourselves-->
+
+    <!--to write text that is read from right to left we can do this-->
+    
+    <br/>
+    <br/>
+    <bdo dir="rtl">Hello</bdo> <!--now the is how we do it useful when writing stuff
+    in urdu arabic or other languages-->
+
+</body>
+</html>
