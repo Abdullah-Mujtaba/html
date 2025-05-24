@@ -17,6 +17,22 @@
 
     <!--dont add spaces between image names because that can cause issues with the page-->
 <!-- 
+
+    This is for responsive image handling — showing different images based on screen size or device resolution.
+
+    📌 How it works:
+    <source> elements define rules for when to load different images.
+
+    media="(min-width: 650px)" means:
+
+    "Use this image only if the screen width is 650px or more."
+
+    The <img> tag at the end acts as a fallback:
+
+    If none of the media queries match, use this image.
+
+    
+
     <picture>
         <source media="(min-width: 650px)" srcset="images.jpeg"/>
         <source media="(min-width: 350px)" srcset="images.jpeg"/>
@@ -36,6 +52,8 @@
     <!--alert is what we see as a pop up with an exclamation mark in our browser
     onclick is a function which says what to do when something is clicked and we can write what to do inside the parenthesis
     here we have called our 2 js functions which we declared below-->
+
+
 
     <script>
 

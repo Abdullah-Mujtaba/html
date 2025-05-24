@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- basically classses and ids help us to select an element from our html page
+     they are also used in styling
+     note that ids are always unique (we can assign same but dont)
+     classes can be repeated and assigned same classes -->
+    <style>
+        .A
+        {
+            background-color: blue;
+            color: white;
+        }
+
+        #red
+        {
+            background-color: red;
+            color: black;
+        }
+
+        /* so this is how we add ids */
+
+        .table
+        {
+            border-collapse: collapse;
+            border: 1px, solid, black;
+        }
+
+        td,th
+        {   
+            border: 1px,solid,black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <p class="A">Hi this is going to be class a</p>
+
+    <p class="A">Hi this is going to be class A again</p>
+
+    <p class="B">Hi this is going to be class b </p>
+
+    <p id="red">Hi this is going to be id red </p>
+
+
+    <!-- iframe allows us to embed, a website, youtube video
+     basically something from another webpage within our page -->
+
+    <!-- but be careful malicios activity can happen due to that -->
+
+    <table class="table">
+        <tr>
+            <th>Video</th>
+            <th>VideoItself</th>
+        </tr>
+
+        <tr>
+            <td>IS500</td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZAz5zMqFeeg?si=q3-L8t_ICFyMnQBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+        </tr>
+        
+
+    </table>
+
+</body>
+</html>

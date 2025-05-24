@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+
+    
+    <style>
+        table
+        {
+            width: 100%;
+            text-align: center;
+            border-color: black;
+            border-collapse: collapse;
+            /* the table had its own border so to remove that we add this */
+        }
+
+        td,th
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        /* what nth child does is that this highlights even(if passed even)
+        in a different color */
+        tr:nth-child(even)
+        {
+            background-color: grey;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!--th is table heading, tr is table row-->
+
+    <table>
+
+        <colgroup>
+            <!-- now working, error was that col span cant handle text color
+             but it can handle background-color still a lot of browsers have
+             dropped support for this -->
+            <col span="2" style="background-color: blueviolet;"/>
+        </colgroup>
+       
+        <tr>
+            <th>Country</th>
+            <th>Name</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>Alfa</td>
+            <td>Red</td>
+        </tr>
+
+               
+        <tr>
+            <td>Italy</td>
+            <td>Ferrari</td>
+            <td>Rosso Corsa</td>
+        </tr>
+               
+        <tr>
+            <td>Italy</td>
+            <td>Lamborghini</td>
+            <td>Yellow</td>
+        </tr>
+               
+        <tr>
+            <td>America</td>
+            <td>Ford</td>
+            <td>Blue</td>
+        </tr>
+
+    </table>
+
+    <!-- another form of table -->
+
+    <table style="width:50%">
+        <tr>
+            <th>Country</th>
+            <td>Italy</td>
+            <td>Germany</td>
+            <td>America</td>
+        </tr>
+        <tr>
+            <!-- what colspan does is gives that block size equal to that many cols
+             here in this case it gives th size equals to 2 columns -->
+            <th style="color:aqua" colspan="2">Name</th>
+            <td>Alfa</td>
+            <td>Mercedes</td>
+            <td>Ford</td>
+        </tr>
+    </table> 
+
+</body>
+</html>
