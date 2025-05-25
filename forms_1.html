@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms1</title>
+
+    <style>
+        body
+        {
+            background-color: rgb(80, 64, 64);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- forms are way of taking input from the user -->
+     <h1>Forms in html</h1>
+
+    <!-- in the action field we put the thing that we have to submit this data to for eg a backend url -->
+     <!-- now there is another field called method, which has 2 options get and post
+      we use post method usually when sending data, it is enrcyted and sent to the database/server if using https
+      data resides in the body-->
+
+      <!-- post sends data in the body -->
+
+      <!-- in get method our data is sent in simple text form and is visible in the url, get is not suitable for 
+       passwords or personal data, it appends the data in the url -->
+       <!-- as we know accept-charset tells the form what kind of characters to expect and accept -->
+    <form action="url" method="GET" accept-charset="UTF-8" enctype="multipart/form-data">
+        <!-- what enctype does sets the form to accept only text or also allow the user to add images from browse button -->
+        <!-- everything encapsulated inside the form is sent at once to the server -->
+        <label for="fname">First Name:</label> 
+        <!-- this is how we add labels this is usually preferred
+         shows the given text to the side of the button -->
+         <!-- by adding id to the button and referring that in the 
+          for of label what happens is when we click on first name
+          it goes to that input field -->
+        <input type="text" name="" id="fname" placeholder="Enter text"> 
+         <!-- this is the way to take input as text, there are other ways as well just write input: and see the suggestions -->
+        <!--placeholder is the temporary text we see in the box indicating what to write
+          -->
+        <br>
+        <label for="lanme">Last Name</label>
+        <input type="text" name="" id="lanme" placeholder="Enter text">
+
+        <br>
+        <button type="submit">Submit the Info</button>\
+        <!-- it is good to add a submit button to submit the information -->
+
+    </form>
+
+</body>
+</html>
